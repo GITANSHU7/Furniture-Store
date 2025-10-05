@@ -1,0 +1,98 @@
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --primary-background: #054c73;
+    --primary-foreground: #ffffff;
+    --primary-dark: #03334e;
+    --primary-accent: #011c42;
+
+    /* Secondary Colors */
+    --secondary-background: #ffffff;
+    --secondary-foreground: #333333;
+    --secondary-light: #fcfcfc;
+    --secondary-muted: #f2f5ff;
+
+    /* Text Colors */
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --text-muted: #011c424c;
+    --text-accent: #054c73;
+    --text-light: #ffffff;
+
+    /* Background Colors */
+    --bg-main: #ffffff;
+    --bg-secondary: #f2f5ff;
+    --bg-accent: #dfe9f4;
+    --bg-dark: #111111;
+    --bg-success: #09513b;
+
+    /* Border Colors */
+    --border-primary: #d6d5d5;
+    --border-accent: #054c73;
+    --border-dark: #011c42;
+
+    /* Typography Variables */
+    --font-size-xs: 14px;
+    --font-size-sm: 16px;
+    --font-size-md: 18px;
+    --font-size-lg: 20px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 32px;
+    --font-size-3xl: 52px;
+
+    /* Font Weight Variables */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Line Height Variables */
+    --line-height-xs: 18px;
+    --line-height-sm: 20px;
+    --line-height-md: 25px;
+    --line-height-lg: 28px;
+    --line-height-xl: 30px;
+    --line-height-2xl: 35px;
+    --line-height-3xl: 39px;
+    --line-height-4xl: 40px;
+    --line-height-5xl: 65px;
+
+    /* Spacing Variables */
+    --spacing-xs: 4px;
+    --spacing-sm: 6px;
+    --spacing-md: 10px;
+    --spacing-lg: 12px;
+    --spacing-xl: 16px;
+    --spacing-2xl: 18px;
+    --spacing-3xl: 20px;
+    --spacing-4xl: 24px;
+    --spacing-5xl: 26px;
+    --spacing-6xl: 28px;
+    --spacing-7xl: 30px;
+    --spacing-8xl: 32px;
+
+    /* Border Radius Variables */
+    --radius-none: 0px;
+    --radius-xs: 2px;
+    --radius-sm: 3px;
+    --radius-md: 10px;
+    --radius-lg: 30px;
+    --radius-xl: 34px;
+    --radius-2xl: 44px;
+    --radius-3xl: 60px;
+    --radius-4xl: 70px;
+    --radius-full: 186px;
+
+    /* Component-specific Colors */
+    --header-bg: #ffffff;
+    --header-text: #333333;
+    --button-bg: #054c73;
+    --button-text: #ffffff;
+    --button-border: #011c42;
+    --footer-bg: #03334e;
+    --line-bg: #d6d5d5;
+  }
+}
