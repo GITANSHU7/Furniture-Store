@@ -26,7 +26,7 @@ const HeroSection = () => {
               </h1>
               
               <p className="text-sm text-[#333333] sm:text-base lg:text-lg font-medium leading-relaxed sm:leading-[1.6] lg:leading-[1.8] text-text-primary mb-6 sm:mb-7 lg:mb-8 w-full opacity-90">
-                Introducing the pieces you'll wear, use, and love every day. We've blended superior quality with thoughtful design to create items that truly last. Upgrade your essentials and find your new go-to favorites starting now.
+                Introducing the pieces you&apos;ll wear, use, and love every day. We&apos;ve blended superior quality with thoughtful design to create items that truly last. Upgrade your essentials and find your new go-to favorites starting now.
 
 
               </p>

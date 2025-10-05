@@ -14,7 +14,7 @@ const HowItWorksSection = () => {
               How It Works
             </h2>
             <p className="text-md text-[#666666] sm:text-lg lg:text-lg font-normal leading-md text-text-secondary">
-              It's a straightforward journey in just three steps.
+              It&apos;s a straightforward journey in just three steps.
             </p>
           </div>
 

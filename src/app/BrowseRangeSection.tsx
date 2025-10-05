@@ -14,7 +14,7 @@ const BrowseRangeSection = () => {
               Browse The Range
             </h2>
             <p className="text-base text-[#666666] sm:text-lg lg:text-xl font-normal leading-relaxed text-text-secondary">
-             We've made it simple to find what you need.
+             We&apos;ve made it simple to find what you need.
             </p>
           </div>
 
