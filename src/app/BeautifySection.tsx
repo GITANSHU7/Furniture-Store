@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import Button from'@/components/ui/Button';
 
 const BeautifySection = () => {
@@ -41,10 +42,12 @@ const BeautifySection = () => {
             <div className="bg-[#09513b] absolute top-[120px] sm:top-[150px] lg:top-[189px] right-0 w-[280px] sm:w-[320px] lg:w-[372px] h-[280px] sm:h-[320px] lg:h-[372px] bg-background-success rounded-full"></div>
             
             {/* Main Image */}
-            <img 
-              src="/images/img_image_97.png" 
-              alt="Beautiful space decoration" 
-              className="absolute top-0 left-0 w-[88%] h-full object-cover rounded-[48px] sm:rounded-[54px] lg:rounded-[60px] rounded-tr-[8px] sm:rounded-tr-[9px] lg:rounded-tr-[10px] rounded-br-[8px] sm:rounded-br-[9px] lg:rounded-br-[10px] rounded-bl-[48px] sm:rounded-bl-[54px] lg:rounded-bl-[60px]"
+            <Image
+              src="/images/img_image_97.png"
+              alt="Beautiful space decoration"
+              layout="fill"
+              objectFit="cover"
+              className="absolute top-0 left-0 w-[88%] h-full rounded-[48px] sm:rounded-[54px] lg:rounded-[60px] rounded-tr-[8px] sm:rounded-tr-[9px] lg:rounded-tr-[10px] rounded-br-[8px] sm:rounded-br-[9px] lg:rounded-br-[10px] rounded-bl-[48px] sm:rounded-bl-[54px] lg:rounded-bl-[60px]"
             />
           </div>
         </div>

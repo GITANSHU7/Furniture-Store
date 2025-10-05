@@ -1,4 +1,5 @@
 import React from 'react';
+import Script from 'next/script';
 import '../styles/index.css';
 
 export const viewport = {
@@ -9,7 +10,7 @@ export const viewport = {
 export const metadata = {
   title: {
     default: 'Modern Furniture Store',
-    template: 'Modern Furniture Store | %s',
+    template: 'Modern Furniture Store',
   },
   description: 'Discover premium furniture collections with free delivery, 24/7 support, and professional styling services. Shop dining, living, and bedroom furniture online.',
   keywords: 'furniture store, home decor, dining furniture, living room, bedroom furniture, free delivery, furniture online',
@@ -18,7 +19,7 @@ export const metadata = {
     type: 'website',
     title: {
       default: 'Modern Furniture Store',
-      template: 'Modern Furniture Store | %s',
+      template: 'Modern Furniture Store',
     },
     description: 'Transform your home with our curated furniture collections. Premium quality, free delivery, and expert styling services for every room.',
   },
@@ -31,8 +32,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fgitanshus1028back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
-</body>
+      <body>
+        {children}
+        <Script
+          type="module"
+          src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fgitanshus1028back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"
+          strategy="lazyOnload"
+        />
+      </body>
     </html>
   );
 }

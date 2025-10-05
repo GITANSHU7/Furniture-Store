@@ -1,29 +1,29 @@
 'use client';
+import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
 
 interface LogoProps {
   className?: string;
-  width?: string;
-  height?: string;
+  width?: number;
+  height?: number;
   alt?: string;
 }
 
-const Logo = ({ 
+const Logo = ({
   className,
-  width = "w-[166px]",
-  height = "h-[50px]",
-  alt = "Beauty Care Logo"
+  width = 166,
+  height = 50,
+  alt = 'Beauty Care Logo',
 }: LogoProps) => {
   return (
-    <img 
-      src="/images/img_header_logo.png" 
+    <Image
+      src="/images/img_header_logo.png"
       alt={alt}
-      className={twMerge(
-        `${width} ${height} object-contain`,
-        className
-      )}
+      width={width}
+      height={height}
+      className={twMerge('object-contain', className)}
     />
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;

@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import List from'@/components/ui/List';
 
 const HowItWorksSection = () => {
@@ -27,15 +28,19 @@ const HowItWorksSection = () => {
             <div className="flex flex-col justify-start items-center w-full sm:w-[300px] lg:w-[380px]">
               <div className="flex flex-col justify-start items-center w-full">
                 <div className="relative w-full h-[320px] sm:h-[360px] lg:h-[400px]">
-                  <img 
-                    src="/images/img_image_83.png" 
-                    alt="Purchase securely process" 
-                    className="absolute inset-0 w-full h-full object-cover rounded-md"
+                  <Image
+                    src="/images/img_image_83.png"
+                    alt="Purchase securely process"
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-md"
                   />
-                  <img 
-                    src="/images/img_african_america.png" 
-                    alt="African American customer" 
-                    className="absolute inset-0 w-full h-full object-cover rounded-md"
+                  <Image
+                    src="/images/img_african_america.png"
+                    alt="African American customer"
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-md"
                   />
                 </div>
                 
@@ -61,15 +66,19 @@ const HowItWorksSection = () => {
             <div className="flex flex-col justify-start items-center w-full sm:w-[300px] lg:w-[380px]">
               <div className="flex flex-col justify-start items-center w-full">
                 <div className="relative w-full h-[320px] sm:h-[360px] lg:h-[400px]">
-                  <img 
-                    src="/images/img_image_84.png" 
-                    alt="Warehouse shipping process" 
-                    className="absolute inset-0 w-full h-full object-cover rounded-md"
+                  <Image
+                    src="/images/img_image_84.png"
+                    alt="Warehouse shipping process"
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-md"
                   />
-                  <img 
-                    src="/images/img_image_87.png" 
-                    alt="Warehouse operations" 
-                    className="absolute inset-0 w-full h-full object-cover rounded-md"
+                  <Image
+                    src="/images/img_image_87.png"
+                    alt="Warehouse operations"
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-md"
                   />
                 </div>
                 
@@ -95,15 +104,19 @@ const HowItWorksSection = () => {
             <div className="flex flex-col justify-start items-center w-full sm:w-[300px] lg:w-[380px]">
               <div className="flex flex-col justify-start items-center w-full">
                 <div className="relative w-full h-[320px] sm:h-[360px] lg:h-[400px]">
-                  <img 
-                    src="/images/img_image_86.png" 
-                    alt="Room styling process" 
-                    className="absolute inset-0 w-full h-full object-cover rounded-md"
+                  <Image
+                    src="/images/img_image_86.png"
+                    alt="Room styling process"
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-md"
                   />
-                  <img 
-                    src="/images/img_empty_living_ro_400x380.png" 
-                    alt="Empty living room styling" 
-                    className="absolute inset-0 w-full h-full object-cover rounded-md"
+                  <Image
+                    src="/images/img_empty_living_ro_400x380.png"
+                    alt="Empty living room styling"
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-md"
                   />
                 </div>
                 

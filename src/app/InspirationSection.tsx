@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import List from '@/components/ui/List';
 
 const InspirationSection = () => {
@@ -27,10 +28,12 @@ const InspirationSection = () => {
               {/* First Image */}
               <div className="flex-shrink-0 w-[280px] sm:w-[320px] lg:w-[354px] mt-4 sm:mt-6 lg:mt-8 group">
                 <div className="relative overflow-hidden rounded-tl-[40px] sm:rounded-tl-[50px] lg:rounded-tl-[70px] shadow-lg group-hover:shadow-2xl transition-all duration-300">
-                  <img 
-                    src="/images/img_empty_living_ro.png" 
-                    alt="Empty living room inspiration" 
-                    className="w-full h-[300px] sm:h-[350px] lg:h-[434px] object-cover transition-transform duration-300 group-hover:scale-105"
+                  <Image
+                    src="/images/img_empty_living_ro.png"
+                    alt="Empty living room inspiration"
+                    width={354}
+                    height={434}
+                    className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
               </div>
@@ -38,10 +41,12 @@ const InspirationSection = () => {
               {/* Second Image */}
               <div className="flex-shrink-0 w-[280px] sm:w-[320px] lg:w-[354px] mb-4 sm:mb-6 lg:mb-8 group">
                 <div className="relative overflow-hidden rounded-lg shadow-lg group-hover:shadow-2xl transition-all duration-300">
-                  <img 
-                    src="/images/img_scandinavian_in.png" 
-                    alt="Scandinavian interior inspiration" 
-                    className="w-full h-[300px] sm:h-[350px] lg:h-[434px] object-cover transition-transform duration-300 group-hover:scale-105"
+                  <Image
+                    src="/images/img_scandinavian_in.png"
+                    alt="Scandinavian interior inspiration"
+                    width={354}
+                    height={434}
+                    className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
               </div>
@@ -49,15 +54,19 @@ const InspirationSection = () => {
               {/* Third Image Stack */}
               <div className="flex-shrink-0 relative w-[280px] sm:w-[320px] lg:w-[354px] h-[300px] sm:h-[350px] lg:h-[434px] mt-4 sm:mt-6 lg:mt-8 group">
                 <div className="relative w-full h-full overflow-hidden rounded-bl-[40px] sm:rounded-bl-[50px] lg:rounded-bl-[54px] shadow-lg group-hover:shadow-2xl transition-all duration-300">
-                  <img 
-                    src="/images/img_interior_has_ye.png" 
-                    alt="Interior design inspiration" 
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  <Image
+                    src="/images/img_interior_has_ye.png"
+                    alt="Interior design inspiration"
+                    layout="fill"
+                    objectFit="cover"
+                    className="transition-transform duration-300 group-hover:scale-105"
                   />
-                  <img 
-                    src="/images/img_light_lamp_white_wall_1.png" 
-                    alt="Light lamp decoration" 
-                    className="absolute top-0 right-0 w-[70px] sm:w-[85px] lg:w-[108px] h-[180px] sm:h-[230px] lg:h-[290px] object-cover rounded-bl-[30px] sm:rounded-bl-[40px] lg:rounded-bl-[54px] shadow-md"
+                  <Image
+                    src="/images/img_light_lamp_white_wall_1.png"
+                    alt="Light lamp decoration"
+                    width={108}
+                    height={290}
+                    className="absolute top-0 right-0 w-[70px] sm:w-[85px] lg:w-[108px] h-auto object-cover rounded-bl-[30px] sm:rounded-bl-[40px] lg:rounded-bl-[54px] shadow-md"
                   />
                 </div>
               </div>
@@ -65,10 +74,12 @@ const InspirationSection = () => {
               {/* Additional Images for Desktop Scroll */}
               <div className="flex-shrink-0 w-[280px] sm:w-[320px] lg:w-[354px] mb-4 sm:mb-6 lg:mb-8 group lg:hidden xl:block">
                 <div className="relative overflow-hidden rounded-lg shadow-lg group-hover:shadow-2xl transition-all duration-300">
-                  <img 
-                    src="/images/img_african_america.png" 
-                    alt="Modern interior inspiration" 
-                    className="w-full h-[300px] sm:h-[350px] lg:h-[434px] object-cover transition-transform duration-300 group-hover:scale-105"
+                  <Image
+                    src="/images/img_african_america.png"
+                    alt="Modern interior inspiration"
+                    width={354}
+                    height={434}
+                    className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
               </div>

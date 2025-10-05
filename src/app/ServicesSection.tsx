@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 
 const ServicesSection = () => {
   return (
@@ -10,9 +11,11 @@ const ServicesSection = () => {
           <div className="flex flex-col sm:flex-row justify-center items-center sm:items-start w-full lg:flex-1 gap-3 sm:gap-4 lg:gap-5 group hover:bg-white hover:shadow-md rounded-lg p-4 transition-all duration-200">
             {/* Icon */}
             <div className="relative flex-shrink-0">
-              <img 
-                src="/images/table.svg" 
-                alt="High Quality Icon" 
+              <Image
+                src="/images/table.svg"
+                alt="High Quality Icon"
+                width={64}
+                height={64}
                 className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 transition-transform group-hover:scale-110 duration-200"
               />
             </div>
@@ -32,10 +35,12 @@ const ServicesSection = () => {
           <div className="flex flex-col sm:flex-row justify-center items-center sm:items-start w-full lg:flex-1 gap-3 sm:gap-4 lg:gap-5 group hover:bg-white hover:shadow-md rounded-lg p-4 transition-all duration-200">
             {/* Icon */}
             <div className="relative flex-shrink-0">
-              <img 
-                // src="/images/img_group.svg" 
-                src="/images/img_shield_1_1.png" 
-                alt="Warranty Protection Icon" 
+              <Image
+                // src="/images/img_group.svg"
+                src="/images/img_shield_1_1.png"
+                alt="Warranty Protection Icon"
+                width={64}
+                height={64}
                 className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 transition-transform group-hover:scale-110 duration-200"
               />
             </div>
@@ -55,10 +60,12 @@ const ServicesSection = () => {
           <div className="flex flex-col sm:flex-row justify-center items-center sm:items-start w-full lg:flex-1 gap-3 sm:gap-4 lg:gap-5 group hover:bg-white hover:shadow-md rounded-lg p-4 transition-all duration-200">
             {/* Icon */}
             <div className="relative flex-shrink-0">
-              <img 
-                src="/images/img_vector_gray_900_50x70.svg" 
-                // src="/images/img_shield_1_1.png" 
-                alt="Free Shipping Icon" 
+              <Image
+                src="/images/img_vector_gray_900_50x70.svg"
+                // src="/images/img_shield_1_1.png"
+                alt="Free Shipping Icon"
+                width={64}
+                height={64}
                 className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 transition-transform group-hover:scale-110 duration-200"
               />
             </div>
@@ -78,9 +85,11 @@ const ServicesSection = () => {
           <div className="flex flex-col sm:flex-row justify-center items-center sm:items-start w-full lg:flex-1 gap-3 sm:gap-4 lg:gap-5 group hover:bg-white hover:shadow-md rounded-lg p-4 transition-all duration-200">
             {/* Icon */}
             <div className="relative flex-shrink-0">
-              <img 
-                src="/images/img_group.svg" 
-                alt="24/7 Support Icon" 
+              <Image
+                src="/images/img_group.svg"
+                alt="24/7 Support Icon"
+                width={64}
+                height={64}
                 className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 transition-transform group-hover:scale-110 duration-200"
               />
             </div>

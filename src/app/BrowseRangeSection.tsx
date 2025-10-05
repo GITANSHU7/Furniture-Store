@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import List from '@/components/ui/List';
 
 const BrowseRangeSection = () => {
@@ -27,15 +28,18 @@ const BrowseRangeSection = () => {
               {/* Dining Category */}
               <div className="flex flex-col justify-start items-center gap-4 sm:gap-5 lg:gap-6 w-full sm:w-[280px] md:w-[320px] lg:w-[380px] group">
                 <div className="relative w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[480px] overflow-hidden rounded-lg shadow-md group-hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src="/images/img_image_81.png" 
-                    alt="Dining room furniture" 
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  <Image
+                    src="/images/img_image_81.png"
+                    alt="Dining room furniture"
+                    layout="fill"
+                    objectFit="cover"
+                    className="transition-transform duration-300 group-hover:scale-105"
                   />
-                  <img 
-                    src="/images/img_image_106.png" 
-                    alt="Dining room overlay" 
-                    className="absolute inset-0 w-full h-full object-cover"
+                  <Image
+                    src="/images/img_image_106.png"
+                    alt="Dining room overlay"
+                    layout="fill"
+                    objectFit="cover"
                   />
                 </div>
                 <h3 className="text-lg text-[#333333] sm:text-xl lg:text-2xl font-semibold leading-tight text-text-primary group-hover:text-text-accent transition-colors">
@@ -46,21 +50,25 @@ const BrowseRangeSection = () => {
               {/* Living Category */}
               <div className="flex flex-col justify-center items-center gap-4 sm:gap-5 lg:gap-6 w-full sm:w-[280px] md:w-[320px] lg:w-[380px] group">
                 <div className="relative w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[480px] overflow-hidden rounded-lg shadow-md group-hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src="/images/img_image_76.png" 
-                    alt="Living room furniture" 
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  <Image
+                    src="/images/img_image_76.png"
+                    alt="Living room furniture"
+                    layout="fill"
+                    objectFit="cover"
+                    className="transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 w-full h-full">
-                    <img 
-                      src="/images/img_image_99.png" 
-                      alt="Living room overlay 1" 
-                      className="absolute inset-0 w-full h-full object-cover"
+                    <Image
+                      src="/images/img_image_99.png"
+                      alt="Living room overlay 1"
+                      layout="fill"
+                      objectFit="cover"
                     />
-                    <img 
-                      src="/images/img_image_100.png" 
-                      alt="Living room overlay 2" 
-                      className="absolute inset-0 w-full h-full object-cover"
+                    <Image
+                      src="/images/img_image_100.png"
+                      alt="Living room overlay 2"
+                      layout="fill"
+                      objectFit="cover"
                     />
                   </div>
                 </div>
@@ -72,15 +80,18 @@ const BrowseRangeSection = () => {
               {/* Bedroom Category */}
               <div className="flex flex-col justify-start items-center gap-4 sm:gap-5 lg:gap-6 w-full sm:w-[280px] md:w-[320px] lg:w-[380px] group">
                 <div className="relative w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[480px] overflow-hidden rounded-lg shadow-md group-hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src="/images/img_image_82.png" 
-                    alt="Bedroom furniture" 
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  <Image
+                    src="/images/img_image_82.png"
+                    alt="Bedroom furniture"
+                    layout="fill"
+                    objectFit="cover"
+                    className="transition-transform duration-300 group-hover:scale-105"
                   />
-                  <img 
-                    src="/images/img_image_101.png" 
-                    alt="Bedroom overlay" 
-                    className="absolute inset-0 w-full h-full object-cover"
+                  <Image
+                    src="/images/img_image_101.png"
+                    alt="Bedroom overlay"
+                    layout="fill"
+                    objectFit="cover"
                   />
                 </div>
                 <h3 className="text-lg text-[#333333]  sm:text-xl lg:text-2xl font-semibold leading-tight text-text-primary group-hover:text-text-accent transition-colors">

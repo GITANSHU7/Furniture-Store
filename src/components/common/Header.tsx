@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
 import HeaderMenu from '../ui/HeaderMenu';
 import HeaderMenuItem from '../ui/HeaderMenuItem';
@@ -20,10 +21,12 @@ const Header = ({ className }: HeaderProps) => {
         <div className="flex flex-row justify-between items-center w-full">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img 
-              src="/images/img_header_logo.png" 
-              alt="Funiro Furniture Logo" 
-              className="w-[100px] h-[30px] sm:w-[140px] sm:h-[42px] lg:w-[166px] lg:h-[50px] object-contain"
+            <Image
+              src="/images/img_header_logo.png"
+              alt="Funiro Furniture Logo"
+              width={166}
+              height={50}
+              className="w-[100px] h-auto sm:w-[140px] lg:w-[166px] object-contain"
             />
           </div>
 
